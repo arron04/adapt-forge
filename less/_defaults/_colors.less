@@ -1,10 +1,13 @@
 // Colour definitions
 // --------------------------------------------------
-@blue: #117F93;
-@blueDark: #263944;
-@grey: #9096A0;
-@greyDark: #4D4D4D;
-@greyLight: #f9f9f9;
+@primary: #6f4ba5;
+@primaryDark: #5f408d;
+@Secondary: #e35a7f;
+@grey: #9096a0;
+@greyDark: #4d4d4d;
+@greySuperLight: #ece7e7;
+@greyLight: #d2cece;
+@greySuperDark: hsl(0, 0%, 10%);
 
 // These variables are used to change the colour of text
 // Primary use is for altering the text colour over a background image
@@ -31,12 +34,12 @@
 @link-hover: @link;
 @link-inverted-hover: @link-inverted;
 
-@heading-color: @blue;
+@heading-color: @primary;
 @heading-color-inverted: @white;
 
 // Items - components
 // --------------------------------------------------
-@item-color: @blue;
+@item-color: @primary;
 @item-color-inverted: @white;
 
 @item-color-hover: darken(@item-color, 10%);
@@ -54,6 +57,7 @@
 // --------------------------------------------------
 @btn-color: @greyDark;
 @btn-color-inverted: @white;
+@btn-border: @greyLight;
 
 @btn-color-hover: darken(@btn-color, 10%);
 @btn-color-inverted-hover: @btn-color-inverted;
@@ -68,8 +72,8 @@
 
 // Disabled - question components
 // --------------------------------------------------
-@disabled: #DDDDDD;
-@disabled-inverted: @black;
+@disabled: @white;
+@disabled-inverted: @greyLight;
 
 // Validation states - question marking
 // --------------------------------------------------
@@ -81,9 +85,9 @@
 
 // Progress
 // --------------------------------------------------
-@progress: @grey;
+@progress: @primary;
 @progress-inverted: @white;
-@progress-border: @grey;
+@progress-border: @greyLight;
 
 // Menu
 // --------------------------------------------------
@@ -94,22 +98,22 @@
 
 @menu-item: @white;
 @menu-item-inverted: @font-color;
-@menu-item-border-color: @item-color;
+@menu-item-border-color: @greySuperLight;
 
 @menu-item-progress: @progress;
 @menu-item-progress-inverted: @progress-inverted;
 @menu-item-progress-border: @progress-border;
 
-@menu-item-btn-color: @btn-color;
+@menu-item-btn-color: @primary;
 @menu-item-btn-color-inverted: @btn-color-inverted;
 
-@menu-item-btn-color-hover: @btn-color-hover;
+@menu-item-btn-color-hover: @primaryDark;
 @menu-item-btn-color-inverted-hover: @btn-color-inverted-hover;
 
 // Navigation
 // --------------------------------------------------
-@nav: @white;
-@nav-inverted: @grey;
+@nav: @grey;
+@nav-inverted: @white;
 
 @nav-icon: @nav-inverted;
 @nav-icon-inverted: @nav;
@@ -127,7 +131,7 @@
 
 // Notify
 // --------------------------------------------------
-@notify: @blue;
+@notify: @primary;
 @notify-inverted: @white;
 
 @notify-link: @notify-inverted;
@@ -148,7 +152,7 @@
 
 // Drawer
 // --------------------------------------------------
-@drawer: @blueDark;
+@drawer: @primaryDark;
 @drawer-inverted: @white;
 
 @drawer-link: @drawer-inverted;
@@ -183,7 +187,7 @@
 // --------------------------------------------------
 @pull-quote: @greyLight;
 @pull-quote-inverted: @font-color;
-@pull-quote-border: @blue;
+@pull-quote-border: @primary;
 
 // Background
 // --------------------------------------------------

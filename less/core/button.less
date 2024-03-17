@@ -22,6 +22,7 @@
     background-color: @btn-color;
     color: @btn-color-inverted;
     border-radius: @btn-border-radius;
+    box-shadow: 1px 8px 16px -14px rgba(66, 68, 90, 0.08); 
 
     .no-touch &:not(.is-disabled):not(.is-locked):hover {
       background-color: @btn-color-hover;
@@ -32,7 +33,8 @@
 
   &-icon.is-disabled,
   &-text.is-disabled {
-    background-color: @disabled;
+    border: solid 1px @btn-border;
+    background-color: @white;
     color: @disabled-inverted;
   }
 

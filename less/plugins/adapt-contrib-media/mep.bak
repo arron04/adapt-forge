@@ -1,6 +1,6 @@
 // Overrides for mejs player
 // --------------------------------------------------
-@mejs-color: @primary;
+@mejs-color: @black;
 @mejs-color-inverted: @white;
 
 @mejs-icon: @white;
@@ -20,33 +20,10 @@
 
 @mejs-cc-size: 0.75rem;
 
-// Adds radius to mejs player and cover
-// --------------------------------------------------
-
-.mejs {
-  &-poster {
-    border-radius: @item-border-radius;
-  }
-
-  &-mediaelement {
-    video {
-      border-radius: @item-border-radius;
-    }
-    border-radius: @item-border-radius;
-  }
-}
-.mejs-controls {
-  border-bottom-left-radius: @item-border-radius;
-  border-bottom-right-radius: @item-border-radius;
-}
-
 .mejs-container {
   // Play icon override
   // --------------------------------------------------
-
   .mejs-overlay {
-    border-radius: 1rem;
-
     .mejs-overlay-button {
       .transform(translate(-50%,-50%));
       height: (@icon-size * 2) + @icon-padding;
@@ -57,7 +34,7 @@
       box-shadow: 0 0 0 3px @white;
       border-radius: 50%;
       color: @white;
-      opacity: 0.75;
+      opacity: .75;
 
       @media (min-width: @device-width-small) {
         height: (@icon-size * 3) + @icon-padding;
@@ -94,8 +71,6 @@
   .mejs-controls {
     background: none;
     background-color: @mejs-color;
-    border-bottom-left-radius: @item-border-radius;
-    border-bottom-right-radius: @item-border-radius;
   }
 
   .mejs-controls .mejs-time,
@@ -220,8 +195,8 @@
   // --------------------------------------------------
   .mejs-controls .mejs-time-rail .mejs-time-float {
     top: -1.5rem;
-    height: calc(~"@{mejs-time-float-size} + 2px");
-    width: calc(~"@{mejs-time-float-width} + 2px");
+    height: calc(~'@{mejs-time-float-size} + 2px');
+    width: calc(~'@{mejs-time-float-width} + 2px');
     margin-left: -@mejs-time-float-width / 2;
     background: none;
     background-color: @white;

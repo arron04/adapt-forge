@@ -1,4 +1,7 @@
 .dropdown {
+  &__list{
+    margin-top: -5px;
+  }
   &__btn {
     position: relative;
     padding-top: @item-padding;
@@ -8,6 +11,7 @@
     text-align: start;
     background-color: @item-color;
     color: @item-color-inverted;
+    border-radius: @btn-border-radius;
 
     .no-touch &:not(.is-disabled):not([aria-expanded="true"]):hover,
     html:not(.a11y-disable-focusoutline) &:focus-visible {

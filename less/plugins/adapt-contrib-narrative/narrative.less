@@ -4,6 +4,10 @@
     .item-title;
   }
 
+  &__content-title-inner {
+    font-weight: @font-weight-bold;
+  }
+
   &__content-body a {
     .link-text;
   }
@@ -11,6 +15,8 @@
   &__controls {
     background-color: @item-color;
     color: @item-color-inverted;
+    border-radius: @btn-border-radius;
+    margin: @narrative-btn-margin;
 
     .no-touch &:not(.is-disabled):not(.is-locked):hover {
       background-color: @item-color-hover;
