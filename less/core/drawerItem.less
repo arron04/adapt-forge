@@ -2,8 +2,9 @@
   &__item-btn {
     display: block;
     padding: @item-padding;
+    margin: (@item-padding / 2);
+    border-radius: @drawer-padding;
     background-color: @drawer-item;
-    border-bottom: 1px solid @drawer-item-hover;
     color: @drawer-item-inverted;
 
     .no-touch &:not(.is-disabled):not(.is-locked):hover {
@@ -13,7 +14,6 @@
     }
   }
 
-  &__item-btn.is-locked,
   &__item-btn.is-disabled {
     background-color: @disabled;
     color: @disabled-inverted;
@@ -25,17 +25,23 @@
   }
 
   &__item-title {
+    margin-bottom: @drawer-title-margin;
     .drawer-item-title;
-    text-align: start;
+    text-align: left;
+    font-weight: @font-weight-bold;
+
+    .dir-rtl & {
+      text-align: right;
+    }
   }
-  
-  &__item-title + &__item-body {
-    margin-top: @drawer-title-margin;
-  }
-  
+
   &__item-body {
     margin-bottom: @drawer-body-margin;
     .drawer-item-body;
-    text-align: start;
+    text-align: left;
+
+    .dir-rtl & {
+      text-align: right;
+    }
   }
 }

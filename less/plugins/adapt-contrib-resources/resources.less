@@ -1,11 +1,11 @@
 .resources {
   &__filter-btn {
-    padding: @item-padding (@item-padding / 2);
+    padding: (@item-padding / 2) (@item-padding / 2);
+    border-radius: (@item-border-radius / 2);
     .resources-filter-btn;
     background-color: @drawer-item;
-    border-bottom: 1px solid @drawer-item-hover;
-    border-right: 1px solid @drawer-item-hover;
     color: @drawer-item-inverted;
+    font-size: 0.875rem;
 
     .no-touch &:not(.is-disabled):not(.is-selected):hover {
       background-color: @drawer-item-hover;
@@ -21,10 +21,16 @@
   &__filter-btn.is-selected {
     background-color: @drawer-item-selected;
     color: @drawer-item-inverted-selected;
-    box-shadow: inset 0 -0.625rem 0 -0.4375rem @drawer-item-selected-underline;
+    // box-shadow: inset 0 -0.625rem 0 -0.4375rem @drawer-item-selected-underline;
   }
 
   &__item-btn {
     text-decoration: none;
+    width: inherit;
+  }
+
+  &__filter-inner {
+    gap: @resources-gap;
+    padding: @resources-padding;
   }
 }
